@@ -27,7 +27,7 @@
         "node-7z": "^3.0.0"
     },
     "optionalDependencies": {
-        "@emulatorjs/cores": "latest"
+        "@emulatorjs/cores": "4.2.3"
     },
     "devDependencies": {
         "@rollup/plugin-terser": "^1.0.0",
