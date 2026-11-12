@@ -836,7 +836,10 @@ class EJS_Frontend {
         let timeout = null;
         let ignoreEvents = false;
         const hide = () => {
+            // Keep the bar visible while any menu, panel or popup is open
             if (this.ejs.paused || this.settingsMenuOpen || this.disksMenuOpen) return;
+            if (this.isPopupOpen()) return;
+            if (this.elements.contextmenu && this.elements.contextmenu.style.display === "block") return;
             this.elements.menu.classList.add("ejs_menu_bar_hidden");
         }
 
