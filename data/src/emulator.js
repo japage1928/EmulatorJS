@@ -346,7 +346,7 @@ class EmulatorJS {
         // Populate downloadTypes
         this.downloadType = {
             "rom": { "name": "ROM", "dontCache": false, "dontExtractIfCore": ["arcade", "fbneo", "fbalpha2012_cps1", "fbalpha2012_cps2", "same_cdi", "mame", "mame2003_plus", "mame2003"] },
-            "core": { "name": "Core", "dontCache": false, "cdnFallback": true },
+            "core": { "name": "Core", "dontCache": false, "cdnFallback": false },
             "bios": { "name": "BIOS", "dontCache": false, "dontExtractIfCore": ["arcade", "fbneo", "fbalpha2012_cps1", "fbalpha2012_cps2", "same_cdi", "mame", "mame2003_plus", "mame2003"] },
             "parent": { "name": "Parent", "dontCache": false },
             "patch": { "name": "Patch", "dontCache": false },
